@@ -75,7 +75,7 @@ public class StudentService {
         statement.close();
     }
 
-    public static void selectsOrderedByColumn(String column) throws SQLException{
+    public static void selectOrderedByColumn(String column) throws SQLException{
         String sql = "SELECT * FROM Students ORDER BY " + column;
         System.out.println("\nStudents ordered by " + column);
         selectStudentTable(sql);
