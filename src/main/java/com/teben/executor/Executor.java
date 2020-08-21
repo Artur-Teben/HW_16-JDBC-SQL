@@ -14,7 +14,7 @@ public class Executor {
             StudentService.initializeStudentTable();
             System.out.println("Students table");
             StudentService.selectStudentTable("SELECT * FROM Students");
-            StudentService.selectsOrderedByColumn("age");
+            StudentService.selectStudentsOrderedByColumn("age");
             StudentService.selectCountOfStudents();
             StudentService.selectStudentsByNameFirstLetter('J');
             StudentService.selectStudentsByAge(20, 45);
